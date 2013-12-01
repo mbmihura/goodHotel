@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
-<head>
-  <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link href="css/app.css" rel="stylesheet" />
+<html class="no-js" lang="en" ng-app="myApp">
+    
+    <head>
 
-  <link href="lib/metro-UI-CSS/css/metro-bootstrap.css" rel="stylesheet">
-  <!--<link href="lib/bootstrap-2.3.2/css/bootstrap.css" rel="stylesheet">-->
-  <link href="lib/metro-UI-CSS/css/metro-bootstrap-responsive.css" rel="stylesheet">
+      <meta charset="utf-8">
+      <link href="css/app.css" rel="stylesheet" />
+
+  <!--<link href="lib/metro-UI-CSS/css/metro-bootstrap.css" rel="stylesheet">-->
+  <link href="lib/bootstrap-Admin-Theme/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="lib/bootstrap-Admin-Theme/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  <!--<link href="lib/metro-UI-CSS/css/metro-bootstrap-responsive.css" rel="stylesheet">-->
   <script src="lib/jquery/jquery-2.0.3.js"></script>
   <script src="lib/jquery-ui-1.10.3/js/jquery-ui-1.10.3.custom.js"></script>
 
   <!-- Metro UI CSS JavaScript plugins -->
+  <!--
   <script src="lib/metro-UI-CSS/js/metro-core.js"></script>
   <script src="lib/metro-UI-CSS/js/metro-touch-handler.js"></script>
   <script src="lib/metro-UI-CSS/js/metro-accordion.js"></script>
@@ -35,76 +38,159 @@
   <script src="lib/metro-UI-CSS/js/metro-listview.js"></script>
   <script src="lib/metro-UI-CSS/js/metro-treeview.js"></script>
   <script src="lib/metro-UI-CSS/js/metro-fluentmenu.js"></script>
-  <script src="lib/metro-UI-CSS/js/metro-hint.js"></script>
-</head>
-<body class="metro">
-  <nav class="navigation-bar fixed-top">
-    <nav class="navigation-bar-content">
-      <div class="element">
-        <a class="dropdown-toggle" href="#a">METRO UI CSS</a>
-        <ul class="dropdown-menu" data-role="dropdown">
-          <li><a href="#">Main</a></li>
-          <li><a href="#">File Open</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Print...</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Exit</a></li>
-        </ul>
-      </div>
+  <script src="lib/metro-UI-CSS/js/metro-hint.js"></script> -->
 
-<div class="element">
-        <a class="dropdown-toggle" href="#a">METRO UI CSS</a>
-        <ul class="dropdown-menu" data-role="dropdown">
-          <li><a href="#">Main</a></li>
-          <li><a href="#">File Open</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Print...</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Exit</a></li>
-        </ul>
-      </div>
 
-      <span class="element-divider"></span>
-      <a class="element brand" href="#"><span class="icon-spin"></span></a>
-      <a class="element brand" href="#"><span class="icon-printer"></span></a>
-      <span class="element-divider"></span>
+        <title>Admin Home Page</title>
+        <!-- Bootstrap -->
+        <link href="lib/bootstrap-Admin-Theme/vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+        <link href="lib/bootstrap-Admin-Theme/assets/styles.css" rel="stylesheet" media="screen">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="lib/bootstrap-Admin-Theme/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">goodHotel</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Martin Mihura <i class="caret"></i>
 
-      <div class="element input-element">
-        <form>
-          <div class="input-control text">
-            <input type="text" placeholder="Search...">
-            <button class="btn-search"></button>
-          </div>
-        </form>
-      </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">Profile</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a tabindex="-1" href="login.html">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">Reservas</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b>
 
-      <div class="element place-right">
-        <a class="dropdown-toggle" href="#">
-          <span class="icon-cog"></span>
-        </a>
-        <ul class="dropdown-menu place-right" data-role="dropdown">
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Download</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Buy Now</a></li>
-        </ul>
-      </div>
-      <span class="element-divider place-right"></span>
-      <a class="element place-right" href="#"><span class="icon-locked-2"></span></a>
-      <span class="element-divider place-right"></span>
-      <button class="element image-button image-left place-right">
-        Martin Mihura
-        <img src="http://profile.ak.fbcdn.net/hprofile-ak-ash1/187118_563729055_1130707520_q.jpg"/>
-      </button>
-    </nav>
-  </nav>
+                                </a>
+                                <ul class="dropdown-menu" id="menu1">
+                                    <li>
+                                        <a href="#">Tools <i class="icon-arrow-right"></i>
+
+                                        </a>
+                                        <ul class="dropdown-menu sub-menu">
+                                            <li>
+                                                <a href="#">Reports</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Logs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Errors</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">SEO Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Content <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">News</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Custom Pages</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Calendar</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a tabindex="-1" href="#">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Users <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">User List</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Search</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Permissions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div ng-view></div>
+
+        
+        <!--/.fluid-container-->
+        <script src="lib/bootstrap-Admin-Theme/vendors/jquery-1.9.1.min.js"></script>
+        <script src="lib/bootstrap-Admin-Theme/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/bootstrap-Admin-Theme/vendors/easypiechart/jquery.easy-pie-chart.js"></script>
+        <script src="lib/bootstrap-Admin-Theme/assets/scripts.js"></script>
+        <script>
+        $(function() {
+            // Easy pie charts
+            $('.chart').easyPieChart({animate: 1000});
+        });
+        </script>
+    </body>
+
+</html>
+
+
   
-<div ng-view style="padding-top: 45px;"></div>
+
 
 <div>Angular seed app: v<span app-version></span></div>
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
+  
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
   <script src="js/app.js"></script>
