@@ -15,6 +15,8 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
   $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
   $routeProvider.when('/view3', {templateUrl: 'partials/partial3.html', controller: 'MyCtrl2'});
+  $routeProvider.when('/reservations', {templateUrl: 'partials/reservationList.html'});
+  $routeProvider.when('/reservations/new', {templateUrl: 'partials/reservationForm.html'});
   $routeProvider.when('/bigExamples', {templateUrl: 'partials/bigExample.html'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
